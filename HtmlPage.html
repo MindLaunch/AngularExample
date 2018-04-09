@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="app1">
+<head>
+    <meta charset="utf-8" />
+    <title>AJS Roman to Arabic</title>
+</head>
+<body>
+    <div ng-controller="controller1">
+        <span>Roman value:</span>
+        <input type="text" ng-model="romanValue" />
+
+        <button ng-click="convertFromRomanToArabic()">Convert</button>
+
+        <span>Arabic value:</span>
+        {{arabicValue}}
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="js/RomanToArabic.js"></script>
+</body>
+</html>
